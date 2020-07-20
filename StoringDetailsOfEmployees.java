@@ -1,10 +1,11 @@
 import java.util.Scanner;
-public class Employee {
+
+public class StoringDetailsOfEmployees {
 	int id;
 	String name;
 	float salary;
 	String city;
-	static String company="DXC";
+	
 	
 	public void acceptDetails() {
 		Scanner scan=new Scanner(System.in);
@@ -26,8 +27,11 @@ public class Employee {
 		System.out.println("The name is "+ this.name);
 		System.out.println("The salary is "+ this.salary);
 		System.out.println("The city is "+ this.city);
-		System.out.println("The company is"+Employee.company);
+		
 		
 	}
 
 }
+
+
+

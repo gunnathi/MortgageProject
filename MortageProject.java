@@ -22,7 +22,7 @@ public class MortageProject {
 	  
 	  System.out.println("Period in years");
 	  byte years=scan.nextByte();
-	  while(!(years>1 && years<30)) {
+	  while(!(years>1 && years<=30)) {
 		  System.out.println("Enter between 1 and 30");
 	   years=scan.nextByte();
 	  }
@@ -31,7 +31,7 @@ public class MortageProject {
 	  double mortage=principal*(monthlyInterest*Math.pow(1+monthlyInterest, numberofpayments))/
 			         (Math.pow(1+monthlyInterest, numberofpayments)-1);
 	  
-	  System.out.println("The mortage is"+mortage);
+	  System.out.println("The mortage is$"+mortage);
 	  
 	  
 	  
